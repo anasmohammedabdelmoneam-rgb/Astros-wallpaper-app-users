@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Astros wallpaper</title>
+
+<style>
+body {
+  background: #111;
+  color: white;
+  text-align: center;
+  font-family: Arial;
+}
+
+h1 {
+  color: #00aaff;
+}
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+img {
+  width: 150px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Astros wallpaper</h1>
+
+<div id="gallery"></div>
+
+<script>
+const gallery = document.getElementById("gallery");
+
+// 👇 غيّر الرقم حسب عدد صورك
+for (let i = 1; i <= 50; i++) {
+  const img = document.createElement("img");
+  img.src = "images/" + i + ".jpg";
+  gallery.appendChild(img);
+}
+</script>
+
+</body>
+</html>
